@@ -547,6 +547,7 @@ export default function CinematicPortfolio() {
   const [activeSkillGroup, setActiveSkillGroup] = useState(null);
   const [activeExperienceGroup, setActiveExperienceGroup] = useState(null);
   const [typedRole, setTypedRole] = useState(identityRoles[0]);
+  const [contactStatus, setContactStatus] = useState("idle");
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
   const cursorXSpring = useSpring(cursorX, { stiffness: 450, damping: 35 });
@@ -657,6 +658,31 @@ export default function CinematicPortfolio() {
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
   }, []);
+
+  async function handleContactSubmit(event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    setContactStatus("sending");
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setContactStatus("sent");
+      form.reset();
+    } catch {
+      setContactStatus("error");
+    }
+  }
 
   return (
     <main className="site-shell">
@@ -1048,8 +1074,10 @@ export default function CinematicPortfolio() {
             className="contact-form glass-card"
             name="portfolio-contact"
             method="POST"
+            action="/"
             data-netlify="true"
             netlify-honeypot="bot-field"
+            onSubmit={handleContactSubmit}
           >
             <input type="hidden" name="form-name" value="portfolio-contact" />
             <p className="hidden-field">
@@ -1064,8 +1092,14 @@ export default function CinematicPortfolio() {
               <textarea name="message" placeholder="Tell me about the role, product, or opportunity" rows={5} required />
             </label>
             <button className="button primary" type="submit">
-              Send Message <Send size={18} suppressHydrationWarning />
+              {contactStatus === "sending" ? "Sending..." : "Send Message"} <Send size={18} suppressHydrationWarning />
             </button>
+            {contactStatus === "sent" && (
+              <p className="form-note success">Message sent. I will get back to you soon.</p>
+            )}
+            {contactStatus === "error" && (
+              <p className="form-note error">Something blocked the form. Please email me directly for now.</p>
+            )}
           </form>
         </div>
       </Section>
