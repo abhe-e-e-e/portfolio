@@ -10,7 +10,6 @@ import {
   ChevronDown,
   FileText,
   FolderOpen,
-  Github,
   Linkedin,
   Mail,
   MessageCircle,
@@ -1066,7 +1065,6 @@ export default function CinematicPortfolio() {
             <div className="contact-links">
               <a href="mailto:abhiramsalim@gmail.com"><Mail size={18} suppressHydrationWarning /> Email</a>
               <a href="https://www.linkedin.com/in/abhiram-s-smitha-749918185/" target="_blank" rel="noreferrer"><Linkedin size={18} suppressHydrationWarning /> LinkedIn</a>
-              <a href="https://github.com" target="_blank" rel="noreferrer"><Github size={18} suppressHydrationWarning /> GitHub</a>
             </div>
           </div>
 
