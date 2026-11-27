@@ -14,11 +14,10 @@ A cinematic portfolio for a Computer Science student focused on product thinking
 
 ## Local Development
 
-The project grid includes eleven interactive studies under `public/projects/`
-and the Decor Pack website and Bottle Studio under `public/decor-pack/`.
-Their titles link to the demos; each study links back to the portfolio.
-Study inputs are illustrative, with dated research sources in the strategy memos.
-Project card content is maintained in `components/project-studies.json`.
+The project grid retains the six original projects. Decor Pack is listed only
+as ongoing freelance work; no project files or demo links are included.
+AI.AT.CORE experience details follow the updated resume, including the status
+of work in development and the scope of reported model accuracy.
 
 ```bash
 npm install

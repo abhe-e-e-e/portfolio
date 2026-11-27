@@ -1,7 +1,5 @@
 "use client";
 
-import projectStudies from "./project-studies.json";
-
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import {
   ArrowUpRight,
@@ -175,22 +173,58 @@ const projects = [
   }
 ];
 
-projects.push(...projectStudies);
-
 const profileStats = [
   { value: "500+", label: "connections across startup, student, and tech ecosystems" },
   { value: "4+", label: "leadership roles across entrepreneurship and business societies" },
   { value: "10", label: "certifications spanning cyber, finance, analytics, and technology" }
 ];
 
+const aiAtCoreWork = [
+  {
+    "title": "Fintech onboarding",
+    "description": "Built KYC/KYB workflows for a client-used UAE crypto exchange beta to assess financial documents against regulatory references, generate scores, and flag potentially non-compliant content for review."
+  },
+  {
+    "title": "Payment reconciliation",
+    "description": "Developed Python/n8n pipelines to ingest bank statements and acquirer reports, designed database schemas, and applied client-specific matching rules in Supabase/PostgreSQL for a solution in development."
+  },
+  {
+    "title": "Workflow design",
+    "description": "Designed digital onboarding architecture for an overseas broker, mapping Know Your Customer (KYC) and Know Your Business (KYB) checks into workflows for individual and business onboarding."
+  },
+  {
+    "title": "Invoice digitisation",
+    "description": "Built a Python/n8n extraction pipeline using PaddleOCR and Tesseract for multilingual invoices, including Arabic; contributed data cleaning, validation, error handling, and debugging during development."
+  },
+  {
+    "title": "Process improvement",
+    "description": "Identified resource-heavy daily regulatory scraping and proposed an adopted change-detection step, triggering full scrapes only when website updates were detected."
+  },
+  {
+    "title": "Cost-conscious AI development",
+    "description": "Contributed to model fine-tuning achieving approximately 85–90% accuracy for the target use case; recommended a smaller Qwen model for in-house deployment to reduce cloud costs."
+  },
+  {
+    "title": "Product conceptualisation",
+    "description": "Conceptualised a business solution using an internal company product and developed a website prototype with Lovable during an internal hackathon."
+  }
+];
+
 const experiences = [
   {
-    role: "AI & Automation Engineer Intern",
-    company: "SPARK XI AI Engineering & Consulting",
-    date: "Jan 2026 - Present",
+    role: "Freelance Web Developer",
+    company: "Decor Pack",
+    date: "Ongoing",
+    location: "",
+    detail: "Ongoing freelance project. Details will be shared when available."
+  },
+  {
+    role: "AI Projects Intern",
+    company: "AI.AT.CORE",
+    date: "Jan 2026 - Jul 2026",
     location: "Dubai, United Arab Emirates",
-    detail:
-      "Built scalable orchestration workflows with n8n, Python, and API integrations, reducing operational overhead by 40% across client integrations."
+    detail: "Built financial automation and document-processing workflows, designed onboarding architecture, and contributed to AI development and product prototyping.",
+    work: aiAtCoreWork
   },
   {
     role: "Project Intern",
@@ -383,15 +417,11 @@ const resumeSkillBlocks = [
 
 const resumeExperience = [
   {
-    role: "AI & Automation Engineer Intern",
-    company: "SPARK XI AI Engineering & Consulting",
-    date: "January 2026 - Present",
+    role: "AI Projects Intern",
+    company: "AI.AT.CORE",
+    date: "January 2026 - July 2026",
     location: "Dubai, UAE",
-    bullets: [
-      "Built scalable AI orchestration workflows with n8n, Python, and API integrations, streamlining business processes and cutting operational overhead by 40% for multiple client integrations.",
-      "Managed cloud infrastructure, storage optimization, and CI/CD pipelines using GitHub Workflows, Docker, and RunPod to enable faster and more reliable deployments.",
-      "Customized and fine-tuned GPT OSS 120B with RAG frameworks for intelligent assistants and automated data solutions, improving performance and contextual accuracy to achieve an accuracy of 93%."
-    ]
+    bullets: aiAtCoreWork.map(({ title, description }) => `${title}: ${description}`)
   },
   {
     role: "Project Intern",
@@ -430,37 +460,6 @@ const resumeEducation = [
     date: "2026"
   }
 ];
-
-function TiltCard({ children, className = "" }) {
-  const rotateX = useMotionValue(0);
-  const rotateY = useMotionValue(0);
-  const smoothX = useSpring(rotateX, { stiffness: 180, damping: 18 });
-  const smoothY = useSpring(rotateY, { stiffness: 180, damping: 18 });
-
-  function onMove(event) {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const px = (event.clientX - rect.left) / rect.width - 0.5;
-    const py = (event.clientY - rect.top) / rect.height - 0.5;
-    event.currentTarget.style.setProperty("--x", `${(px + 0.5) * 100}%`);
-    event.currentTarget.style.setProperty("--y", `${(py + 0.5) * 100}%`);
-    rotateX.set(py * -5);
-    rotateY.set(px * 7);
-  }
-
-  return (
-    <motion.div
-      className={`tilt-card ${className}`}
-      style={{ rotateX: smoothX, rotateY: smoothY, transformStyle: "preserve-3d" }}
-      onMouseMove={onMove}
-      onMouseLeave={() => {
-        rotateX.set(0);
-        rotateY.set(0);
-      }}
-    >
-      {children}
-    </motion.div>
-  );
-}
 
 function Section({ id, eyebrow, title, children, className = "" }) {
   return (
@@ -832,8 +831,18 @@ export default function CinematicPortfolio() {
               <div>
                 <h3>{item.role}</h3>
                 <p className="experience-company">{item.company}</p>
-                <p className="experience-location">{item.location}</p>
+                {item.location ? <p className="experience-location">{item.location}</p> : null}
                 <p>{item.detail}</p>
+                {item.work ? (
+                  <dl className="experience-work">
+                    {item.work.map((work) => (
+                      <div key={work.title}>
+                        <dt>{work.title}</dt>
+                        <dd>{work.description}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                ) : null}
               </div>
             </motion.article>
           ))}
@@ -962,7 +971,7 @@ export default function CinematicPortfolio() {
       <Section id="projects" eyebrow="Projects" title="Selected work with business context">
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <TiltCard key={project.title} className="project-card">
+            <article key={project.title} className="project-card">
               <span className="project-index">{String(index + 1).padStart(2, "0")}</span>
               <p className="project-category">{project.category}</p>
               <h3>{project.href ? <a href={project.href}>{project.title}</a> : project.title}</h3>
@@ -978,7 +987,7 @@ export default function CinematicPortfolio() {
                 ))}
               </div>
               <ArrowUpRight className="project-arrow" size={22} suppressHydrationWarning />
-            </TiltCard>
+            </article>
           ))}
         </div>
       </Section>

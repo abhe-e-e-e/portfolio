@@ -686,7 +686,7 @@ textarea {
 }
 
 .glass-card,
-.tilt-card,
+.project-card,
 .skill-chip {
   border: 1px solid var(--line);
   background:
@@ -1018,6 +1018,23 @@ textarea {
   line-height: 1.65;
 }
 
+.experience-work {
+  display: grid;
+  gap: 1.15rem;
+  margin: 1.5rem 0 0;
+}
+
+.experience-work dt {
+  color: #f4f7fb;
+  font-weight: 600;
+}
+
+.experience-work dd {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .experience-modal {
   position: relative;
   width: min(48rem, 100%);
@@ -1287,7 +1304,6 @@ textarea {
   position: absolute;
   inset: -1px;
   background:
-    radial-gradient(circle at var(--x, 50%) var(--y, 20%), rgba(216, 194, 139, 0.14), transparent 20rem),
     linear-gradient(135deg, rgba(216, 194, 139, 0.055), rgba(127, 141, 168, 0.08));
   opacity: 0.8;
   pointer-events: none;

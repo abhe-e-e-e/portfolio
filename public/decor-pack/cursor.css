@@ -1,8 +1,0 @@
-.atelier-cursor { display:none; pointer-events:none; position:fixed; left:0; top:0; z-index:9999; width:0; height:0; }
-.atelier-cursor::before { content:""; position:absolute; width:9px; height:9px; left:-4.5px; top:-4.5px; background:#f8f7f3; border-radius:50%; transition:width .16s,height .16s,left .16s,top .16s; }
-.custom-cursor .atelier-cursor { display:block; mix-blend-mode:difference; }
-.custom-cursor,.custom-cursor a,.custom-cursor button,.custom-cursor canvas { cursor:none!important; }
-.atelier-cursor.is-link::before { width:32px; height:32px; left:-16px; top:-16px; background:transparent; border:1px solid #f8f7f3; }
-.atelier-cursor.is-drag { width:58px; height:58px; margin:-29px 0 0 -29px; border:1px solid #f8f7f3; border-radius:50%; color:#f8f7f3; font:9px/58px Arial,sans-serif; letter-spacing:1px; text-align:center; }
-.atelier-cursor.is-drag::before { display:none; }
-@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce) { .atelier-cursor { display:none!important; } }
