@@ -210,13 +210,39 @@ const aiAtCoreWork = [
   }
 ];
 
+const plusxWork = [
+  {
+    title: "Product development",
+    description: "Contributed to backend design for coordinating mobile EV charging pod deliveries to customer locations."
+  },
+  {
+    title: "Product testing",
+    description: "Conducted manual testing to identify defects in the mobile EV charging application."
+  },
+  {
+    title: "Launch coordination",
+    description: "Supported outreach, marketing, and stakeholder engagement, contributing to a 35% increase in brand exposure; coordinated transport permissions and rollout planning."
+  }
+];
+
+const creativeAxisWork = [
+  {
+    title: "Operations & coordination",
+    description: "Analyzed supplier quotations, costs, and project timelines; coordinated delivery and follow-ups, contributing to a 20% improvement in operational efficiency."
+  },
+  {
+    title: "Supplier comparison",
+    description: "Designed an internal quote-comparison solution using a SQL stored procedure and reviewed records in Excel."
+  }
+];
+
 const experiences = [
   {
-    role: "Freelance Web Developer",
+    role: "Freelance Digital Consultant",
     company: "Decor Pack",
     date: "Ongoing",
     location: "",
-    detail: "Ongoing freelance project. Details will be shared when available."
+    detail: "Ongoing digital consulting engagement. Details will be shared when available."
   },
   {
     role: "AI Projects Intern",
@@ -232,7 +258,8 @@ const experiences = [
     date: "Jun 2024 - Aug 2024",
     location: "Dubai, United Arab Emirates",
     detail:
-      "Developed AI-powered automation pipelines using Python, Flask, and n8n, improving operational efficiency by 35%."
+      "Supported mobile EV charging product development, application testing, and launch coordination.",
+    work: plusxWork
   },
   {
     role: "Business Operations Intern",
@@ -240,7 +267,8 @@ const experiences = [
     date: "Jun 2023 - Sep 2023",
     location: "Dubai, United Arab Emirates",
     detail:
-      "Managed administrative operations and domain projects while coordinating cross-functional delivery to reduce manual work and improve efficiency by 20%."
+      "Supported supplier analysis, quote comparison, and cross-functional project delivery.",
+    work: creativeAxisWork
   }
 ];
 
@@ -428,21 +456,14 @@ const resumeExperience = [
     company: "PLUSX Electric",
     date: "June 2024 - August 2024",
     location: "Dubai, UAE",
-    bullets: [
-      "Developed and deployed AI-powered automation pipelines using Python, Flask, and n8n, improving efficiency by 35%.",
-      "Engineered an NLP-driven chatbot with RAG to simplify workforce training and skill development.",
-      "Deployed intelligent reporting dashboards to enhance stakeholder insights, increasing collaboration efficiency by 10%."
-    ]
+    bullets: plusxWork.map(({ title, description }) => `${title}: ${description}`)
   },
   {
     role: "Business Operations Intern",
     company: "Creative Axis Building Contracting",
     date: "June 2023 - September 2023",
     location: "Dubai, UAE",
-    bullets: [
-      "Managed administrative operations and domain projects, integrating AI-based design tools to optimize workflows.",
-      "Coordinated cross-functional teams to streamline delivery, reducing manual tasks and improving efficiency by 20%."
-    ]
+    bullets: creativeAxisWork.map(({ title, description }) => `${title}: ${description}`)
   }
 ];
 
@@ -834,6 +855,8 @@ export default function CinematicPortfolio() {
                 {item.location ? <p className="experience-location">{item.location}</p> : null}
                 <p>{item.detail}</p>
                 {item.work ? (
+                  <details className="experience-details">
+                    <summary>Work highlights</summary>
                   <dl className="experience-work">
                     {item.work.map((work) => (
                       <div key={work.title}>
@@ -842,6 +865,7 @@ export default function CinematicPortfolio() {
                       </div>
                     ))}
                   </dl>
+                  </details>
                 ) : null}
               </div>
             </motion.article>
@@ -1055,11 +1079,14 @@ export default function CinematicPortfolio() {
                     <h4>{item.role}, {item.company}</h4>
                     <span className="resume-date">{item.date}</span>
                     <p className="resume-place">{item.location}</p>
+                    <details className="experience-details">
+                      <summary>Work highlights</summary>
                     <ul>
                       {item.bullets.map((bullet) => (
                         <li key={bullet}>{bullet}</li>
                       ))}
                     </ul>
+                    </details>
                   </div>
                 ))}
               </div>

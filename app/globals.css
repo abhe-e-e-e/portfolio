@@ -1024,6 +1024,23 @@ textarea {
   margin: 1.5rem 0 0;
 }
 
+.experience-details {
+  margin-top: 1rem;
+}
+
+.experience-details > summary {
+  width: fit-content;
+  color: var(--gold);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.experience-details > summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
 .experience-work dt {
   color: #f4f7fb;
   font-weight: 600;
