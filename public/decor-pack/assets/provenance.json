@@ -1,0 +1,72 @@
+[
+  {
+    "asset": "decor-pack/assets/rectangular.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 13,
+    "pdfImageObject": "011a6731603bbf65f24d50e38c26884c",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/rounded.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 4,
+    "pdfImageObject": "537eb91e8f10d64c416217d2446fa852",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/cylinder.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 4,
+    "pdfImageObject": "95dac07be0803f8786da2e5401615fba",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/faceted.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 13,
+    "pdfImageObject": "9dcf769fd396b731e1ba3953725bccd3",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/cap-wood.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 17,
+    "pdfImageObject": "1a31cbbc37a8cff64be7f73615e44aa7",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/cap-gold.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 17,
+    "pdfImageObject": "415aa3e255e69412a0d60d9f1712b54d",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/cap-silver.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 17,
+    "pdfImageObject": "8929e1530f7ab224016c0ab7dc0b7ece",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/cap-dome.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 17,
+    "pdfImageObject": "d7dbffa6aa4ba9bd9e575f52c05784f9",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/cap-drop.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 17,
+    "pdfImageObject": "a6d005c1183406c3cab30aaf5df181d2",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  },
+  {
+    "asset": "decor-pack/assets/cap-wide.png",
+    "source": "Decor-Pack-Product-Catalogue.pdf",
+    "page": 17,
+    "pdfImageObject": "90df7ff71587a68d8373ac21cedc0ec7",
+    "processing": "Original decoded PDF image pixels; no retouching or resampling"
+  }
+]

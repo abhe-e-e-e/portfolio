@@ -1,5 +1,7 @@
 "use client";
 
+import projectStudies from "./project-studies.json";
+
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import {
   ArrowUpRight,
@@ -172,6 +174,8 @@ const projects = [
     tags: ["Python", "TensorFlow", "scikit-learn", "Seaborn"]
   }
 ];
+
+projects.push(...projectStudies);
 
 const profileStats = [
   { value: "500+", label: "connections across startup, student, and tech ecosystems" },
@@ -959,9 +963,9 @@ export default function CinematicPortfolio() {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <TiltCard key={project.title} className="project-card">
-              <span className="project-index">0{index + 1}</span>
+              <span className="project-index">{String(index + 1).padStart(2, "0")}</span>
               <p className="project-category">{project.category}</p>
-              <h3>{project.title}</h3>
+              <h3>{project.href ? <a href={project.href}>{project.title}</a> : project.title}</h3>
               <p>{project.description}</p>
               <ul>
                 {project.outcomes.map((outcome) => (

@@ -1,0 +1,31 @@
+[
+  {
+    "version": "v1",
+    "date": "2026-09-01",
+    "sections": {
+      "Returns": "Items may be returned within 14 days.",
+      "Receipts": "A receipt is required.",
+      "Shipping": "Standard shipping takes 5 days."
+    }
+  },
+  {
+    "version": "v2",
+    "date": "2026-10-01",
+    "sections": {
+      "Returns": "Items may be returned within 30 days.",
+      "Receipts": "A receipt is required.",
+      "Shipping": "Standard shipping takes 5 days.",
+      "Exceptions": "Personalised items cannot be returned."
+    }
+  },
+  {
+    "version": "v3",
+    "date": "2026-11-01",
+    "sections": {
+      "Returns": "Items may be returned within 30 days.",
+      "Receipts": "  A receipt is required.  ",
+      "Shipping": "Standard shipping takes 3 days.",
+      "Exceptions": "Personalised items cannot be returned."
+    }
+  }
+]

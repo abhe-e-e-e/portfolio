@@ -1,0 +1,78 @@
+{
+  "channels": [
+    {
+      "channel": "Search",
+      "share": 45,
+      "cpc": 4.5,
+      "signup": 0.14,
+      "activate": 0.6,
+      "retain": 0.55
+    },
+    {
+      "channel": "Community",
+      "share": 25,
+      "cpc": 2,
+      "signup": 0.2,
+      "activate": 0.45,
+      "retain": 0.7
+    },
+    {
+      "channel": "Social",
+      "share": 30,
+      "cpc": 1.5,
+      "signup": 0.07,
+      "activate": 0.35,
+      "retain": 0.4
+    }
+  ],
+  "cohorts": [
+    {
+      "week": "2026-W40",
+      "activated": 40,
+      "w1": 30,
+      "w2": 25,
+      "w4": 20
+    },
+    {
+      "week": "2026-W41",
+      "activated": 41,
+      "w1": 31,
+      "w2": 25,
+      "w4": 20
+    },
+    {
+      "week": "2026-W42",
+      "activated": 42,
+      "w1": 32,
+      "w2": 26,
+      "w4": 21
+    },
+    {
+      "week": "2026-W43",
+      "activated": 43,
+      "w1": 32,
+      "w2": 27,
+      "w4": 22
+    }
+  ],
+  "experiments": [
+    {
+      "id": "E1",
+      "hypothesis": "A shorter sign-up form increases activation.",
+      "control": 38,
+      "control_n": 250,
+      "treatment": 47,
+      "treatment_n": 250,
+      "decision": "Continue: sample too small for a reliable lift claim."
+    },
+    {
+      "id": "E2",
+      "hypothesis": "A guided checklist improves week-four retention.",
+      "control": 24,
+      "control_n": 80,
+      "treatment": 35,
+      "treatment_n": 82,
+      "decision": "Continue: directional evidence, validate with a larger cohort."
+    }
+  ]
+}

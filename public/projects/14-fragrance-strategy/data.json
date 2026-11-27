@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "project": 14,
+      "publisher": "L'Oreal Finance",
+      "title": "2025 annual results",
+      "url": "https://www.loreal-finance.com/eng/press-release/2025-annual-results",
+      "published": "2026-02-12",
+      "supports": "Fragrances remained dynamic within Luxe",
+      "limitations": "Corporate results, not Dubai niche sizing or evidence of demand for this concept."
+    },
+    {
+      "project": 14,
+      "publisher": "Diptyque",
+      "title": "UK official shop",
+      "url": "https://uk.diptyqueparis.com/en-uk",
+      "published": null,
+      "supports": "Five 7.5 ml EDP discovery set GBP 139; Do Son holiday EDP 75 ml GBP 170 at observation",
+      "limitations": "UK retail snapshot; prices can change; not UAE pricing or a like-for-like product comparison."
+    },
+    {
+      "project": 14,
+      "publisher": "Le Labo",
+      "title": "Discovery sets",
+      "url": "https://www.lelabofragrances.com/fine-fragrances/discovery-set",
+      "published": null,
+      "supports": "Discovery format exists alongside the fragrance collection",
+      "limitations": "Format evidence only; no demand or conversion data."
+    }
+  ],
+  "checked_on": "2026-11-15",
+  "model_defaults": {
+    "kitPrice": 60,
+    "bottlePrice": 420,
+    "conversion": 15,
+    "cac": 45
+  }
+}

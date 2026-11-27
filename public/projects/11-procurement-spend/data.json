@@ -1,0 +1,438 @@
+{
+  "spend": [
+    {
+      "invoice": "INV-001",
+      "supplier": "ATLAS",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 24.200000000000003
+    },
+    {
+      "invoice": "INV-002",
+      "supplier": "Cedar",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.7999999999999998
+    },
+    {
+      "invoice": "INV-003",
+      "supplier": "Dune",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 5.2
+    },
+    {
+      "invoice": "INV-004",
+      "supplier": " Atlas ",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 22.0
+    },
+    {
+      "invoice": "INV-005",
+      "supplier": "ATLAS",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.6500000000000001
+    },
+    {
+      "invoice": "INV-006",
+      "supplier": "Cedar",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 4.8
+    },
+    {
+      "invoice": "INV-007",
+      "supplier": "Dune",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 28.6
+    },
+    {
+      "invoice": "INV-008",
+      "supplier": " Atlas ",
+      "item": "Bolt M8 / unit",
+      "qty": 80,
+      "unitPrice": 1.5
+    },
+    {
+      "invoice": "INV-009",
+      "supplier": "ATLAS",
+      "item": "Cable 2.5mm / m",
+      "qty": 20,
+      "unitPrice": 4.4
+    },
+    {
+      "invoice": "INV-010",
+      "supplier": "Cedar",
+      "item": "Paint white / L",
+      "qty": 80,
+      "unitPrice": 26.4
+    },
+    {
+      "invoice": "INV-011",
+      "supplier": "Dune",
+      "item": "Bolt M8 / unit",
+      "qty": 80,
+      "unitPrice": 1.9500000000000002
+    },
+    {
+      "invoice": "INV-012",
+      "supplier": " Atlas ",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 4.0
+    },
+    {
+      "invoice": "INV-013",
+      "supplier": "ATLAS",
+      "item": "Paint white / L",
+      "qty": 80,
+      "unitPrice": 24.200000000000003
+    },
+    {
+      "invoice": "INV-014",
+      "supplier": "Cedar",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.7999999999999998
+    },
+    {
+      "invoice": "INV-015",
+      "supplier": "Dune",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 5.2
+    },
+    {
+      "invoice": "INV-016",
+      "supplier": " Atlas ",
+      "item": "Paint white / L",
+      "qty": 80,
+      "unitPrice": 22.0
+    },
+    {
+      "invoice": "INV-017",
+      "supplier": "ATLAS",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.6500000000000001
+    },
+    {
+      "invoice": "INV-018",
+      "supplier": "Cedar",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 4.8
+    },
+    {
+      "invoice": "INV-019",
+      "supplier": "Dune",
+      "item": "Paint white / L",
+      "qty": 20,
+      "unitPrice": 28.6
+    },
+    {
+      "invoice": "INV-020",
+      "supplier": " Atlas ",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.5
+    },
+    {
+      "invoice": "INV-021",
+      "supplier": "ATLAS",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 4.4
+    },
+    {
+      "invoice": "INV-022",
+      "supplier": "Cedar",
+      "item": "Paint white / L",
+      "qty": 80,
+      "unitPrice": 26.4
+    },
+    {
+      "invoice": "INV-023",
+      "supplier": "Dune",
+      "item": "Bolt M8 / unit",
+      "qty": 80,
+      "unitPrice": 1.9500000000000002
+    },
+    {
+      "invoice": "INV-024",
+      "supplier": " Atlas ",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 4.0
+    },
+    {
+      "invoice": "INV-025",
+      "supplier": "ATLAS",
+      "item": "Paint white / L",
+      "qty": 80,
+      "unitPrice": 24.200000000000003
+    },
+    {
+      "invoice": "INV-026",
+      "supplier": "Cedar",
+      "item": "Bolt M8 / unit",
+      "qty": 20,
+      "unitPrice": 1.7999999999999998
+    },
+    {
+      "invoice": "INV-027",
+      "supplier": "Dune",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 5.2
+    },
+    {
+      "invoice": "INV-028",
+      "supplier": " Atlas ",
+      "item": "Paint white / L",
+      "qty": 80,
+      "unitPrice": 22.0
+    },
+    {
+      "invoice": "INV-029",
+      "supplier": "ATLAS",
+      "item": "Bolt M8 / unit",
+      "qty": 20,
+      "unitPrice": 1.6500000000000001
+    },
+    {
+      "invoice": "INV-030",
+      "supplier": "Cedar",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 4.8
+    },
+    {
+      "invoice": "INV-031",
+      "supplier": "Dune",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 28.6
+    },
+    {
+      "invoice": "INV-032",
+      "supplier": " Atlas ",
+      "item": "Bolt M8 / unit",
+      "qty": 20,
+      "unitPrice": 1.5
+    },
+    {
+      "invoice": "INV-033",
+      "supplier": "ATLAS",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 4.4
+    },
+    {
+      "invoice": "INV-034",
+      "supplier": "Cedar",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 26.4
+    },
+    {
+      "invoice": "INV-035",
+      "supplier": "Dune",
+      "item": "Bolt M8 / unit",
+      "qty": 20,
+      "unitPrice": 1.9500000000000002
+    },
+    {
+      "invoice": "INV-036",
+      "supplier": " Atlas ",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 4.0
+    },
+    {
+      "invoice": "INV-037",
+      "supplier": "ATLAS",
+      "item": "Paint white / L",
+      "qty": 20,
+      "unitPrice": 24.200000000000003
+    },
+    {
+      "invoice": "INV-038",
+      "supplier": "Cedar",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.7999999999999998
+    },
+    {
+      "invoice": "INV-039",
+      "supplier": "Dune",
+      "item": "Cable 2.5mm / m",
+      "qty": 20,
+      "unitPrice": 5.2
+    },
+    {
+      "invoice": "INV-040",
+      "supplier": " Atlas ",
+      "item": "Paint white / L",
+      "qty": 20,
+      "unitPrice": 22.0
+    },
+    {
+      "invoice": "INV-041",
+      "supplier": "ATLAS",
+      "item": "Bolt M8 / unit",
+      "qty": 80,
+      "unitPrice": 1.6500000000000001
+    },
+    {
+      "invoice": "INV-042",
+      "supplier": "Cedar",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 4.8
+    },
+    {
+      "invoice": "INV-043",
+      "supplier": "Dune",
+      "item": "Paint white / L",
+      "qty": 20,
+      "unitPrice": 28.6
+    },
+    {
+      "invoice": "INV-044",
+      "supplier": " Atlas ",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.5
+    },
+    {
+      "invoice": "INV-045",
+      "supplier": "ATLAS",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 4.4
+    },
+    {
+      "invoice": "INV-046",
+      "supplier": "Cedar",
+      "item": "Paint white / L",
+      "qty": 80,
+      "unitPrice": 26.4
+    },
+    {
+      "invoice": "INV-047",
+      "supplier": "Dune",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.9500000000000002
+    },
+    {
+      "invoice": "INV-048",
+      "supplier": " Atlas ",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 4.0
+    },
+    {
+      "invoice": "INV-049",
+      "supplier": "ATLAS",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 24.200000000000003
+    },
+    {
+      "invoice": "INV-050",
+      "supplier": "Cedar",
+      "item": "Bolt M8 / unit",
+      "qty": 20,
+      "unitPrice": 1.7999999999999998
+    },
+    {
+      "invoice": "INV-051",
+      "supplier": "Dune",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 5.2
+    },
+    {
+      "invoice": "INV-052",
+      "supplier": " Atlas ",
+      "item": "Paint white / L",
+      "qty": 20,
+      "unitPrice": 22.0
+    },
+    {
+      "invoice": "INV-053",
+      "supplier": "ATLAS",
+      "item": "Bolt M8 / unit",
+      "qty": 20,
+      "unitPrice": 1.6500000000000001
+    },
+    {
+      "invoice": "INV-054",
+      "supplier": "Cedar",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 4.8
+    },
+    {
+      "invoice": "INV-055",
+      "supplier": "Dune",
+      "item": "Paint white / L",
+      "qty": 20,
+      "unitPrice": 28.6
+    },
+    {
+      "invoice": "INV-056",
+      "supplier": " Atlas ",
+      "item": "Bolt M8 / unit",
+      "qty": 40,
+      "unitPrice": 1.5
+    },
+    {
+      "invoice": "INV-057",
+      "supplier": "ATLAS",
+      "item": "Cable 2.5mm / m",
+      "qty": 40,
+      "unitPrice": 4.4
+    },
+    {
+      "invoice": "INV-058",
+      "supplier": "Cedar",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 26.4
+    },
+    {
+      "invoice": "INV-059",
+      "supplier": "Dune",
+      "item": "Bolt M8 / unit",
+      "qty": 80,
+      "unitPrice": 1.9500000000000002
+    },
+    {
+      "invoice": "INV-060",
+      "supplier": " Atlas ",
+      "item": "Cable 2.5mm / m",
+      "qty": 80,
+      "unitPrice": 4.0
+    },
+    {
+      "invoice": "INV-001",
+      "supplier": "ATLAS",
+      "item": "Paint white / L",
+      "qty": 40,
+      "unitPrice": 24.200000000000003
+    },
+    {
+      "invoice": "INV-INVALID",
+      "supplier": "Dune",
+      "item": "Paint white / L",
+      "qty": -4,
+      "unitPrice": 22
+    }
+  ]
+}
